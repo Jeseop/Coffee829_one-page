@@ -544,7 +544,7 @@ header #card-btn {
   padding: 1.5rem;
 }
 
-.footer .credit span {
+.footer .credit a {
   color: var(--main-color);
 }
 
