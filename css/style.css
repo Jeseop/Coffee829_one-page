@@ -127,6 +127,7 @@ section {
   top: 115%;
   right: 7%;
   background: #fff;
+  box-shadow: 0 0 6px 4px rgba(0, 0, 0, .2);
   width: 50rem;
   height: 5rem;
   display: flex;
@@ -157,9 +158,17 @@ section {
   color: var(--main-color);
 }
 
-header #search-btn,
-header #card-btn {
+.fa-search:before,
+.fa-shopping-cart:before,
+.fa-bars:before {
   color: var(--text-white);
+  transition: color .2s;
+}
+
+.fa-search:hover:before,
+.fa-shopping-cart:hover:before,
+.fa-bars:hover:before {
+  color: var(--main-color);
 }
 
 .header .cart-items-container {
@@ -191,9 +200,11 @@ header #card-btn {
   cursor: pointer;
   /* color: var(--black); */
 }
-.header .cart-items-container .cart-item .fa-times:hover {
+
+/* .header .cart-items-container .cart-item .fa-times:hover {
   color: var(--main-color);
-}
+} */
+
 .header .cart-items-container .cart-item img {
   height: 7rem;
 }
@@ -223,7 +234,7 @@ header #card-btn {
 
 .home-content {
   position: absolute;
-  top: 400px;
+  bottom: 50px;
   left: 50px;
 }
 
