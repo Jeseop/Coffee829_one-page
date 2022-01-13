@@ -34,14 +34,15 @@ html {
 }
 
 html::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 1.2rem;
 }
-
 html::-webkit-scrollbar-track {
   background: transparent;
 }
 html::-webkit-scrollbar-thumb {
   background: var(--bgcolor-menu);
+  background-clip: padding-box;
+  border: 2px solid transparent;
   border-radius: 5rem;
 }
 
