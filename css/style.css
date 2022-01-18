@@ -11,6 +11,7 @@
   --text-strong: #5762bd;
   --bgcolor-menu: #00145e;
   --bgcolor-main: #f3f3f5;
+  --bgcolor-white-opaque: rgba(255, 255, 255, 0.6);;
   --box-hightlight: rgba(122, 145, 255, 0.2);
 }
 
@@ -160,14 +161,14 @@ section {
 }
 
 .fa-search:before,
-.fa-shopping-cart:before,
+header .fa-shopping-cart:before,
 .fa-bars:before {
   color: var(--text-white);
   transition: color .2s;
 }
 
 .fa-search:hover:before,
-.fa-shopping-cart:hover:before,
+header .fa-shopping-cart:hover:before,
 .fa-bars:hover:before {
   color: var(--main-color);
 }
@@ -290,7 +291,8 @@ section {
 .menu .box-container .box {
   padding: 5rem;
   text-align: center;
-  border: var(--border);
+  /* border: var(--border); */
+  background-color: var(--bgcolor-white-opaque);
 }
 
 .menu .box-container .box img {
@@ -327,7 +329,8 @@ section {
 
 .products .box-container .box {
   text-align: center;
-  border: var(--border);
+  /* border: var(--border); */
+  background-color: var(--bgcolor-white-opaque);
   padding: 2rem;
 }
 .products .box-container .box .icons a {
@@ -335,8 +338,9 @@ section {
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
-  border: var(--border);
+  /* border: var(--border); */
   color: var(--bgcolor-menu);
+  background-color: var(--bgcolor-white-opaque);
   margin: 0.3rem;
 }
 .products .box-container .box .icons a:hover {
@@ -378,6 +382,7 @@ section {
 }
 .review .box-container .box {
   border: var(--border);
+  background-color: var(--bgcolor-white-opaque);
   text-align: center;
   padding: 3rem 2rem;
 }
@@ -459,6 +464,7 @@ section {
 
 .blogs .box-container .box {
   border: var(--border);
+  background-color: var(--bgcolor-white-opaque);
 }
 
 .blogs .box-container .box .image {
